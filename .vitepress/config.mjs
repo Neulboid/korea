@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/korea/',
   title: "Neulvoid",
   description: "늘보이드 서버 공식 안내서 및 종합 가이드 위키입니다.",
   themeConfig: {
