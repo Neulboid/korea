@@ -1,0 +1,167 @@
+/* 세련된 웹 폰트 적용 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+:root {
+  /* 바탕 배경 (은은한 그라데이션 느낌을 주는 소프트 베이스) */
+  --vp-c-bg: #f0f2f7;
+  --vp-c-bg-alt: #e6e9f2;
+  --vp-c-bg-soft: #dc9e3ea6;
+
+  /* 본문 카드 배경 (선명한 흰색) */
+  --vp-card-bg: #ffffff;
+
+  /* 사이드바 배경 */
+  --vp-sidebar-bg-color: #f0f2f7;
+
+  /* 포인트 라벤더 블루 톤 */
+  --vp-c-brand-1: #5b6789;
+  --vp-c-brand-2: #485370;
+  --vp-c-brand-3: #364057;
+
+  /* 텍스트 색상 */
+  --vp-c-text-1: #252a34;
+  --vp-c-text-2: #535c6b;
+
+  /* 테두리 색상 */
+  --vp-c-divider: #d4daf0;
+
+  --vp-font-family-base: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* 1. 배경에 은은한 모던 패턴/그라데이션 효과 주기 */
+body {
+  background-image: 
+    radial-gradient(at 10% 20%, rgba(91, 103, 137, 0.08) 0px, transparent 50%),
+    radial-gradient(at 90% 80%, rgba(105, 117, 155, 0.06) 0px, transparent 50%);
+  background-attachment: fixed;
+}
+
+/* 2. 본문 카드: 공중에 떠 있는 몽글몽글한 입체 카드 스타일 + 호버 애니메이션 */
+.VPContent .container {
+  max-width: 980px !important;
+  background-color: var(--vp-card-bg) !important;
+  padding: 44px !important;
+  border-radius: 24px !important;
+  box-shadow: 0 10px 35px rgba(91, 103, 137, 0.07) !important;
+  margin-top: 24px !important;
+  margin-bottom: 48px !important;
+  border: 1px solid rgba(212, 218, 240, 0.8) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 마우스 살짝 올렸을 때 카드가 기분 좋게 떠오르는 효과 */
+.VPContent .container:hover {
+  box-shadow: 0 14px 45px rgba(91, 103, 137, 0.1) !important;
+}
+
+/* 3. 상단 네비게이션 및 상단 검색바 알약 스타일 업그레이드 */
+.VPNav {
+  background-color: rgba(240, 242, 247, 0.85) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--vp-c-divider) !important;
+}
+
+.VPNavBarSearch .DocSearch-Button {
+  background-color: #ffffff !important;
+  border: 1px solid #d4daf0 !important;
+  border-radius: 999px !important;
+  padding: 0 18px !important;
+  box-shadow: 0 3px 8px rgba(91, 103, 137, 0.04) !important;
+  transition: all 0.2s ease;
+}
+
+.VPNavBarSearch .DocSearch-Button:hover {
+  border-color: #5b6789 !important;
+  box-shadow: 0 4px 12px rgba(91, 103, 137, 0.08) !important;
+}
+
+/* 4. 제목 및 본문 요소 디테일 */
+h1 {
+  font-weight: 800 !important;
+  color: #3b4561 !important;
+  letter-spacing: -0.6px;
+  font-size: 2.2rem !important;
+  margin-bottom: 26px !important;
+}
+
+h2 {
+  border-bottom: 2px dashed #d4daf0 !important;
+  padding-bottom: 12px;
+  color: #5b6789 !important;
+  font-weight: 700 !important;
+  margin-top: 36px !important;
+}
+
+/* 5. 팁 박스(콜아웃) 및 인용구 모던 디자인 */
+.custom-block.tip {
+  background-color: #f5f7fc !important;
+  border: 1px solid #d8e0f5 !important;
+  border-left: 6px solid #5b6789 !important;
+  border-radius: 16px !important;
+  color: #252a34 !important;
+  padding: 18px !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+}
+
+blockquote {
+  background-color: #f5f7fc !important;
+  border-left: 5px solid #5b6789 !important;
+  border-radius: 10px !important;
+  padding: 16px 20px !important;
+  color: #3b4561 !important;
+  font-weight: 600;
+}
+
+/* 6. 사이드바 메뉴 활성화 시 부드러운 라벤더 박스 효과 */
+.VPSidebarItem.is-active > .item {
+  background-color: #e4e7f2 !important;
+  border-radius: 12px !important;
+  color: #485370 !important;
+  font-weight: 700 !important;
+}
+
+.VPSidebarItem .item {
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+/* 7. 스크롤바 디자인 커스텀 (둥글고 얇은 세련된 스크롤바) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd3e4;
+  border-radius: 999px;
+  transition: background 0.2s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5b6789;
+}
+
+/* 8. 본문 내 인라인 코드 (백틱 `text`) 예쁘게 꾸미기 */
+p code, li code, table code {
+  background-color: #eef1f8 !important;
+  color: #485370 !important;
+  padding: 3px 6px !important;
+  border-radius: 6px !important;
+  font-size: 0.9em !important;
+  border: 1px solid #d4daf0 !important;
+  font-weight: 600;
+}
+
+/* 9. 본문 하이퍼링크 호버 시 부드러운 효과 */
+.VPContent a:not(.VPButton) {
+  color: #5b6789;
+  text-decoration: underline;
+  text-decoration-color: #cbd3e4;
+  text-underline-offset: 3px;
+  transition: all 0.2s ease;
+}
+
+.VPContent a:not(.VPButton):hover {
+  color: #364057;
+  text-decoration-color: #5b6789;
+}
