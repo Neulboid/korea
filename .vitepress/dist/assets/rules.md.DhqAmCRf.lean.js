@@ -1,1 +1,0 @@
-import{_ as l,o as e,c as t,a2 as r}from"./chunks/framework.CdvW4CUT.js";const c=JSON.parse('{"title":"📜 서버 규칙","description":"","frontmatter":{},"headers":[],"relativePath":"rules.md","filePath":"rules.md"}'),o={name:"rules.md"};function i(n,a,s,u,h,_){return e(),t("div",null,[...a[0]||(a[0]=[r("",15)])])}const g=l(o,[["render",i]]);export{c as __pageData,g as default};

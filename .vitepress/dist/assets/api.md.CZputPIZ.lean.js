@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as i,a2 as o}from"./chunks/framework.BTG3230_.js";const m=JSON.parse('{"title":"🔌 API 안내 및 규칙","description":"","frontmatter":{},"headers":[],"relativePath":"api.md","filePath":"api.md"}'),r={name:"api.md"};function s(l,a,n,c,p,_){return e(),i("div",null,[...a[0]||(a[0]=[o("",3)])])}const u=t(r,[["render",s]]);export{m as __pageData,u as default};

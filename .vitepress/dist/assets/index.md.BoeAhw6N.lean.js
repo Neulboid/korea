@@ -1,1 +1,0 @@
-import{_ as a,o as e,c as o,a2 as r}from"./chunks/framework.CdvW4CUT.js";const p=JSON.parse('{"title":"🎮 늘보이드 서버 공식 위키","description":"","frontmatter":{},"headers":[],"relativePath":"index.md","filePath":"index.md"}'),l={name:"index.md"};function i(n,t,s,c,d,h){return e(),o("div",null,[...t[0]||(t[0]=[r("",11)])])}const _=a(l,[["render",i]]);export{p as __pageData,_ as default};
