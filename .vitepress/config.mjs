@@ -48,7 +48,6 @@ export default defineConfig({
           { text: '위키 홈', link: '/' },
           { text: '서버규칙', link: '/rules' },
           { text: '늘보이드 생존 백과', link: '/survival' },
-          { text: 'API 안내 및 규칙', link: '/api' },
           { text: '유저 API 목록', link: '/user-api' },
           { text: '섭주API 목록', link: '/host-api' },
           { text: '뷰포인트 세팅안내', link: '/viewpoint' }
