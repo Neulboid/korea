@@ -4,6 +4,10 @@ export default defineConfig({
   base: '/korea/',
   title: "Neulvoid",
   description: "늘보이드 서버 공식 안내서 및 종합 가이드 위키입니다.",
+
+  // 🌑 검정 테마 고정 (밝은 모드 전환 버튼이 사라집니다)
+  appearance: 'force-dark',
+
   themeConfig: {
     // 🔍 검색 기능 활성화 (상단에 돋보기/검색창 생성)
     search: {
@@ -39,11 +43,15 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '서버 안내',
+        text: '서버안내',
         items: [
           { text: '위키 홈', link: '/' },
-          { text: '서버 규칙', link: '/rules' },
-          { text: 'API 안내 및 규칙', link: '/api' }
+          { text: '서버규칙', link: '/rules' },
+          { text: '늘보이드 생존 백과', link: '/survival' },
+          { text: 'API 안내 및 규칙', link: '/api' },
+          { text: '유저 API 목록', link: '/user-api' },
+          { text: '섭주API 목록', link: '/host-api' },
+          { text: '뷰포인트 세팅안내', link: '/viewpoint' }
         ]
       }
     ],

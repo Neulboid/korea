@@ -1,73 +1,61 @@
-
 /* ==========================================
-   NEULVOID WIKI - MODERN UI
-   Pretendard + Lavender + Smooth Animation
+   NEULVOID WIKI - BLACK THEME
+   Pretendard + Pure Black + Smooth Animation
+   (배너의 검정색과 같은 #000 으로 고정)
 ========================================== */
 
 /* 1. 폰트 */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
-:root {
-  --vp-c-bg: #f0f2f7;
-  --vp-c-bg-alt: #e9ecf4;
-  --vp-c-bg-soft: #e9ecf5;
+/* 2. 색상 (밝은 모드가 없으므로 한 벌만 정의) */
+:root,
+.dark {
+  color-scheme: dark;
 
-  --vp-card-bg: #ffffff;
-  --vp-sidebar-bg-color: #f0f2f7;
+  --vp-c-bg: #000000;
+  --vp-c-bg-alt: #050505;
+  --vp-c-bg-elv: #0d0d0d;
+  --vp-c-bg-soft: #141414;
 
-  --vp-c-brand-1: #5b6789;
-  --vp-c-brand-2: #485370;
-  --vp-c-brand-3: #364057;
+  --vp-card-bg: #0a0a0a;
+  --vp-sidebar-bg-color: #000000;
 
-  --vp-c-text-1: #252a34;
-  --vp-c-text-2: #535c6b;
+  --vp-c-brand-1: #ffffff;
+  --vp-c-brand-2: #e6e6e6;
+  --vp-c-brand-3: #cccccc;
+  --vp-c-brand-soft: rgba(255, 255, 255, 0.12);
 
-  --vp-c-divider: #d4daf0;
+  --vp-c-text-1: #ededed;
+  --vp-c-text-2: #a6a6a6;
+  --vp-c-text-3: #7a7a7a;
+
+  --vp-c-divider: #262626;
+  --vp-c-gutter: #000000;
+
+  --vp-button-brand-bg: #e6e6e6;
+  --vp-button-brand-text: #000000;
+  --vp-button-brand-hover-bg: #ffffff;
+  --vp-button-brand-hover-text: #000000;
+  --vp-button-brand-active-bg: #cccccc;
+  --vp-button-brand-active-text: #000000;
 
   --vp-font-family-base: 'Pretendard',
     -apple-system, BlinkMacSystemFont, sans-serif;
 
+  --wiki-red: #e04848;
   --wiki-radius: 18px;
-  --wiki-shadow: 0 10px 35px rgba(91, 103, 137, 0.07);
-  --wiki-shadow-hover: 0 14px 40px rgba(91, 103, 137, 0.13);
-}
-
-/* 2. 다크 모드 */
-.dark {
-  --vp-c-bg: #171a23;
-  --vp-c-bg-alt: #1c202b;
-  --vp-c-bg-soft: #252a38;
-
-  --vp-card-bg: #202532;
-  --vp-sidebar-bg-color: #1b1f2a;
-
-  --vp-c-brand-1: #a6b3dc;
-  --vp-c-brand-2: #bac5e8;
-  --vp-c-brand-3: #d0d9f5;
-
-  --vp-c-text-1: #e7eaf2;
-  --vp-c-text-2: #b2b9c9;
-
-  --vp-c-divider: #353d50;
-
-  --wiki-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
-  --wiki-shadow-hover: 0 14px 40px rgba(0, 0, 0, 0.25);
+  --wiki-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
+  --wiki-shadow-hover: 0 14px 40px rgba(0, 0, 0, 0.8);
 }
 
 /* 3. 기본 배경 */
 body {
   background-color: var(--vp-c-bg);
-  background-image:
-    radial-gradient(
-      at 10% 20%,
-      rgba(91, 103, 137, 0.08) 0px,
-      transparent 50%
-    ),
-    radial-gradient(
-      at 90% 80%,
-      rgba(105, 117, 155, 0.06) 0px,
-      transparent 50%
-    );
+  background-image: radial-gradient(
+    at 50% 0%,
+    rgba(255, 255, 255, 0.04) 0px,
+    transparent 55%
+  );
   background-attachment: fixed;
   font-family: var(--vp-font-family-base);
 }
@@ -88,34 +76,38 @@ body {
   animation: wikiFadeIn 0.45s ease both;
 }
 
-/* 5. 본문 카드 */
+/* 5. 배너 (theme/index.js 에서 넣은 배너) */
+.wiki-banner {
+  border: 1px solid var(--vp-c-divider);
+  box-sizing: border-box;
+}
+
+/* 6. 본문 카드 */
 .VPContent .container {
   max-width: 980px !important;
-  background-color: var(--wiki-card-bg, var(--vp-card-bg)) !important;
+  background-color: var(--vp-card-bg) !important;
   padding: 44px !important;
   border-radius: 24px !important;
   box-shadow: var(--wiki-shadow) !important;
   margin-top: 24px !important;
   margin-bottom: 48px !important;
   border: 1px solid var(--vp-c-divider) !important;
-  transition: box-shadow 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .VPContent .container:hover {
   box-shadow: var(--wiki-shadow-hover) !important;
+  border-color: #3a3a3a !important;
 }
 
-/* 6. 상단 네비게이션 */
+/* 7. 상단 네비게이션 */
 .VPNav {
-  background-color: rgba(240, 242, 247, 0.88) !important;
+  background-color: rgba(0, 0, 0, 0.88) !important;
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--vp-c-divider) !important;
-  transition: background-color 0.3s ease;
-}
-
-.dark .VPNav {
-  background-color: rgba(23, 26, 35, 0.88) !important;
 }
 
 /* 검색창 */
@@ -124,20 +116,18 @@ body {
   border: 1px solid var(--vp-c-divider) !important;
   border-radius: 999px !important;
   padding: 0 18px !important;
-  box-shadow: 0 3px 8px rgba(91, 103, 137, 0.04) !important;
   transition: all 0.25s ease;
 }
 
 .VPNavBarSearch .DocSearch-Button:hover {
   border-color: var(--vp-c-brand-1) !important;
-  box-shadow: 0 4px 14px rgba(91, 103, 137, 0.13) !important;
   transform: translateY(-1px);
 }
 
-/* 7. 제목 */
+/* 8. 제목 */
 h1 {
   font-weight: 800 !important;
-  color: var(--vp-c-brand-2) !important;
+  color: var(--vp-c-brand-1) !important;
   letter-spacing: -0.7px;
   font-size: 2.2rem !important;
   margin-bottom: 26px !important;
@@ -146,7 +136,7 @@ h1 {
 h2 {
   border-bottom: 2px dashed var(--vp-c-divider) !important;
   padding-bottom: 12px;
-  color: var(--vp-c-brand-1) !important;
+  color: var(--vp-c-brand-2) !important;
   font-weight: 700 !important;
   margin-top: 36px !important;
 }
@@ -156,7 +146,7 @@ h3 {
   letter-spacing: -0.3px;
 }
 
-/* 8. 팁 박스 */
+/* 9. 안내 박스 (tip / warning / danger) */
 .custom-block.tip {
   background-color: var(--vp-c-bg-soft) !important;
   border: 1px solid var(--vp-c-divider) !important;
@@ -164,15 +154,30 @@ h3 {
   border-radius: 14px !important;
   color: var(--vp-c-text-1) !important;
   padding: 18px !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.025);
-  transition: box-shadow 0.25s ease;
 }
 
-.custom-block.tip:hover {
-  box-shadow: var(--wiki-shadow);
+.custom-block.warning,
+.custom-block.danger {
+  background-color: rgba(224, 72, 72, 0.08) !important;
+  border: 1px solid rgba(224, 72, 72, 0.35) !important;
+  border-left: 5px solid var(--wiki-red) !important;
+  border-radius: 14px !important;
+  color: var(--vp-c-text-1) !important;
+  padding: 18px !important;
 }
 
-/* 인용구 */
+.custom-block.warning .custom-block-title,
+.custom-block.danger .custom-block-title {
+  color: #ff8a8a !important;
+}
+
+/* 빨간 강조 글씨 */
+.wiki-red {
+  color: var(--wiki-red);
+  font-weight: 700;
+}
+
+/* 인용구 (조아요 박스) */
 blockquote {
   background-color: var(--vp-c-bg-soft) !important;
   border-left: 5px solid var(--vp-c-brand-1) !important;
@@ -182,7 +187,7 @@ blockquote {
   font-weight: 600;
 }
 
-/* 9. 사이드바 */
+/* 10. 사이드바 */
 .VPSidebar {
   background-color: var(--vp-sidebar-bg-color) !important;
 }
@@ -196,23 +201,18 @@ blockquote {
 }
 
 .VPSidebarItem .item:hover {
-  background-color: rgba(91, 103, 137, 0.08);
+  background-color: rgba(255, 255, 255, 0.06);
   padding-left: 5px;
 }
 
 .VPSidebarItem.is-active > .item {
-  background-color: #e4e7f2 !important;
+  background-color: #1c1c1c !important;
   border-radius: 12px !important;
-  color: #485370 !important;
+  color: #ffffff !important;
   font-weight: 700 !important;
 }
 
-.dark .VPSidebarItem.is-active > .item {
-  background-color: #343c52 !important;
-  color: #d0d9f5 !important;
-}
-
-/* 10. 버튼 */
+/* 11. 버튼 */
 .VPButton {
   border-radius: 10px !important;
   transition:
@@ -223,14 +223,14 @@ blockquote {
 
 .VPButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 14px rgba(91, 103, 137, 0.15);
+  box-shadow: 0 5px 14px rgba(255, 255, 255, 0.12);
 }
 
 .VPButton:active {
   transform: translateY(0);
 }
 
-/* 11. 인라인 코드 */
+/* 12. 인라인 코드 */
 p code,
 li code,
 table code {
@@ -247,7 +247,6 @@ table code {
 div[class*='language-'] {
   border-radius: 13px !important;
   border: 1px solid var(--vp-c-divider);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.035);
   transition: box-shadow 0.25s ease;
 }
 
@@ -255,11 +254,11 @@ div[class*='language-']:hover {
   box-shadow: var(--wiki-shadow);
 }
 
-/* 12. 링크 */
+/* 13. 링크 */
 .VPContent a:not(.VPButton) {
   color: var(--vp-c-brand-1);
   text-decoration: underline;
-  text-decoration-color: var(--vp-c-divider);
+  text-decoration-color: #555555;
   text-underline-offset: 3px;
   transition:
     color 0.2s ease,
@@ -267,11 +266,11 @@ div[class*='language-']:hover {
 }
 
 .VPContent a:not(.VPButton):hover {
-  color: var(--vp-c-brand-3);
-  text-decoration-color: var(--vp-c-brand-1);
+  color: #ffffff;
+  text-decoration-color: #ffffff;
 }
 
-/* 13. 표 */
+/* 14. 표 */
 .vp-doc table {
   display: table;
   width: 100%;
@@ -293,7 +292,7 @@ div[class*='language-']:hover {
   padding: 12px 16px !important;
 }
 
-/* 14. 스크롤바 */
+/* 15. 스크롤바 */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -304,24 +303,24 @@ div[class*='language-']:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #cbd3e4;
+  background: #2e2e2e;
   border-radius: 999px;
   transition: background 0.2s ease;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #7e8bad;
+  background: #555555;
 }
 
-.dark ::-webkit-scrollbar-thumb {
-  background: #454e63;
-}
-
-/* 15. 모바일 대응 */
+/* 16. 모바일 대응 */
 @media (max-width: 768px) {
   .VPContent .container {
     padding: 22px !important;
     margin: 12px 12px 30px !important;
+    border-radius: 16px !important;
+  }
+
+  .wiki-banner {
     border-radius: 16px !important;
   }
 
@@ -334,7 +333,7 @@ div[class*='language-']:hover {
   }
 }
 
-/* 16. 애니메이션 최소화 설정 존중 */
+/* 17. 애니메이션 최소화 설정 존중 */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
