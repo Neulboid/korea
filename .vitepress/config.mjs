@@ -38,7 +38,6 @@ export default defineConfig({
     nav: [
       { text: '홈', link: '/' },
       { text: '서버 규칙', link: '/rules' },
-      { text: 'API 안내', link: '/api' }
     ],
 
     sidebar: [
@@ -55,8 +54,5 @@ export default defineConfig({
       }
     ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com' }
-    ]
   }
 })
