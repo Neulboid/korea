@@ -37,7 +37,6 @@ export default defineConfig({
 
     nav: [
       { text: '홈', link: '/' },
-      { text: '서버 규칙', link: '/rules' },
     ],
 
     sidebar: [
