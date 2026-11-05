@@ -1,3 +1,4 @@
+
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
@@ -5,11 +6,9 @@ export default defineConfig({
   title: "Neulvoid",
   description: "늘보이드 서버 공식 안내서 및 종합 가이드 위키입니다.",
 
-  // 🌑 검정 테마 고정 (밝은 모드 전환 버튼이 사라집니다)
   appearance: 'force-dark',
 
   themeConfig: {
-    // 🔍 검색 기능 활성화 (상단에 돋보기/검색창 생성)
     search: {
       provider: 'local',
       options: {
@@ -35,11 +34,14 @@ export default defineConfig({
       }
     },
 
+    // 상단 메뉴
     nav: [
       { text: '홈', link: '/' },
-      { text: '서버 규칙', link: '/rules' }
+      { text: '서버 규칙', link: '/rules' },
+      { text: '직업', link: '/jobs/' }
     ],
 
+    // 왼쪽 사이드바
     sidebar: [
       {
         text: '서버안내',
@@ -47,7 +49,19 @@ export default defineConfig({
           { text: '위키 홈', link: '/' },
           { text: '서버 규칙', link: '/rules' }
         ]
+      },
+      {
+        text: '직업',
+        link: '/jobs/',
+        collapsed: false,
+        items: [
+          { text: '광전사', link: '/jobs/berserker' },
+          { text: '뮤턴트', link: '/jobs/mutant' },
+          { text: '사이보그', link: '/jobs/cyborg' },
+          { text: '연금술사', link: '/jobs/alchemist' },
+          { text: '특전사', link: '/jobs/special-forces' }
+        ]
       }
-    ],
+    ]
   }
 })
