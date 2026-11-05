@@ -36,14 +36,16 @@ export default defineConfig({
     },
 
     nav: [
-      { text: '홈', link: '/' }
+      { text: '홈', link: '/' },
+      { text: '서버 규칙', link: '/rules' }
     ],
 
     sidebar: [
       {
         text: '서버안내',
         items: [
-          { text: '위키 홈', link: '/' }
+          { text: '위키 홈', link: '/' },
+          { text: '서버 규칙', link: '/rules' }
         ]
       }
     ],
