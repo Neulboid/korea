@@ -1,4 +1,11 @@
 # 광전사
+<div style="width:100%; aspect-ratio:16 / 9; overflow:hidden; border-radius:12px; margin:20px 0 28px;">
+  <img
+    src="/images_berserker/광전.png"
+    alt="광전사 대표 이미지"
+    style="width:100%; height:100%; object-fit:cover; object-position:center;"
+  />
+</div>
 
 근접 전투에 특화된 직업입니다.
 
