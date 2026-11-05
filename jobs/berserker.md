@@ -20,7 +20,7 @@
 
 광전사는 **분노 게이지**와 **광란 게이지**, 두 가지 전용 게이지를 사용합니다.
 
-<img src="/korea/images_berserker/게이지.png" alt="광전사 전용 게이지" width="440" />
+<img src="/images_berserker/게이지.png" alt="광전사 전용 게이지" width="440" />
 
 ### 분노 게이지
 
@@ -40,7 +40,7 @@
 
 ### 1. 전투광
 
-<img src="/korea/images_berserker/전투광.png" alt="전투광" width="120" />
+<img src="/images_berserker/전투광.png" alt="전투광" width="120" />
 
 **종류:** 토글 액티브
 
@@ -57,7 +57,7 @@
 
 ### 2. 피의 광란
 
-<img src="/korea/images_berserker/피의광란.png" alt="피의 광란" width="120" />
+<img src="/images_berserker/피의광란.png" alt="피의 광란" width="120" />
 
 **종류:** 토글 액티브
 
@@ -75,7 +75,7 @@
 
 ### 3. 전율의 외침
 
-<img src="/korea/images_berserker/전율의외침.png" alt="전율의 외침" width="120" />
+<img src="/images_berserker/전율의외침.png" alt="전율의 외침" width="120" />
 
 **종류:** 액티브
 
@@ -90,7 +90,7 @@
 
 ### 4. 원망의 눈빛
 
-<img src="/korea/images_berserker/원망의눈초리.png" alt="원망의 눈빛" width="120" />
+<img src="/images_berserker/원망의눈초리.png" alt="원망의 눈빛" width="120" />
 
 **종류:** 원샷 액티브
 
@@ -106,7 +106,7 @@
 
 ### 5. 닷지
 
-<img src="/korea/images_berserker/닷지.png" alt="닷지" width="120" />
+<img src="/images_berserker/닷지.png" alt="닷지" width="120" />
 
 **종류:** 액티브
 
@@ -123,7 +123,7 @@
 
 ### 6. 광란 - 검기
 
-<img src="/korea/images_berserker/광란.png" alt="광란 - 검기" width="120" />
+<img src="/images_berserker/광란.png" alt="광란 - 검기" width="120" />
 
 **종류:** 액티브
 
@@ -151,7 +151,7 @@
 
 ### 1. 피의 계약
 
-<img src="/korea/images_berserker/피의계약.png" alt="피의 계약" width="120" />
+<img src="/images_berserker/피의계약.png" alt="피의 계약" width="120" />
 
 **종류:** 각성 궁극기
 
@@ -173,7 +173,7 @@
 
 ### 2. 적월 선회
 
-<img src="/korea/images_berserker/적월선회.png" alt="적월 선회" width="120" />
+<img src="/images_berserker/적월선회.png" alt="적월 선회" width="120" />
 
 **종류:** 각성 궁극기
 
@@ -195,7 +195,7 @@
 
 ### 3. 압도적인 패기
 
-<img src="/korea/images_berserker/압도적인패기.png" alt="압도적인 패기" width="120" />
+<img src="/images_berserker/압도적인패기.png" alt="압도적인 패기" width="120" />
 
 **종류:** 각성 궁극기
 
