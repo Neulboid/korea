@@ -39,7 +39,7 @@
 <div style="display:flex; align-items:center; gap:20px; margin:24px 0; padding-bottom:20px; border-bottom:1px solid var(--vp-c-divider);">
   <img src="/images_berserker/전투광.png" alt="전투광" style="width:100px; height:100px; object-fit:contain; flex-shrink:0;" />
   <div style="flex:1; min-width:0;">
-    <h3>1. 전투광</h3>
+    <h3>전투광</h3>
     <p>주변 좀비가 많을수록 공격력과 치명타 확률이 증가합니다.</p>
     <p>체력이 지속적으로 감소하며, 최소 1%까지 유지됩니다.</p>
   </div>
@@ -48,7 +48,7 @@
 <div style="display:flex; align-items:center; gap:20px; margin:24px 0; padding-bottom:20px; border-bottom:1px solid var(--vp-c-divider);">
   <img src="/images_berserker/피의광란.png" alt="피의 광란" style="width:100px; height:100px; object-fit:contain; flex-shrink:0;" />
   <div style="flex:1; min-width:0;">
-    <h3>2. 피의 광란</h3>
+    <h3>피의 광란</h3>
     <p>광란 게이지가 30% 이상일 때 활성화할 수 있습니다.</p>
     <p>활성화 중 근접 공격 속도가 증가하며, 게이지가 30% 미만이 되면 자동으로 해제됩니다.</p>
   </div>
@@ -57,7 +57,7 @@
 <div style="display:flex; align-items:center; gap:20px; margin:24px 0; padding-bottom:20px; border-bottom:1px solid var(--vp-c-divider);">
   <img src="/images_berserker/전율의외침.png" alt="전율의 외침" style="width:100px; height:100px; object-fit:contain; flex-shrink:0;" />
   <div style="flex:1; min-width:0;">
-    <h3>3. 전율의 외침</h3>
+    <h3>전율의 외침</h3>
     <p>주변 좀비에게 외침 피해를 줍니다.</p>
   </div>
 </div>
@@ -65,7 +65,7 @@
 <div style="display:flex; align-items:center; gap:20px; margin:24px 0; padding-bottom:20px; border-bottom:1px solid var(--vp-c-divider);">
   <img src="/images_berserker/원망의눈초리.png" alt="원망의 눈빛" style="width:100px; height:100px; object-fit:contain; flex-shrink:0;" />
   <div style="flex:1; min-width:0;">
-    <h3>4. 원망의 눈빛</h3>
+    <h3>원망의 눈빛</h3>
     <p>현재 체력의 5%를 소모합니다.</p>
     <p>체력이 30% 미만이면 사용할 수 없습니다.</p>
   </div>
@@ -74,7 +74,7 @@
 <div style="display:flex; align-items:center; gap:20px; margin:24px 0; padding-bottom:20px; border-bottom:1px solid var(--vp-c-divider);">
   <img src="/images_berserker/닷지.png" alt="닷지" style="width:100px; height:100px; object-fit:contain; flex-shrink:0;" />
   <div style="flex:1; min-width:0;">
-    <h3>5. 닷지</h3>
+    <h3>닷지</h3>
     <p>바라보는 방향의 반대쪽으로 2타일 이동합니다.</p>
     <p>경직 상태에서는 사용할 수 없습니다.</p>
   </div>
@@ -83,7 +83,7 @@
 <div style="display:flex; align-items:center; gap:20px; margin:24px 0; padding-bottom:20px; border-bottom:1px solid var(--vp-c-divider);">
   <img src="/images_berserker/광란.png" alt="광란 - 검기" style="width:100px; height:100px; object-fit:contain; flex-shrink:0;" />
   <div style="flex:1; min-width:0;">
-    <h3>6. 광란 - 검기</h3>
+    <h3>광란 - 검기</h3>
     <p>광란 게이지를 모두 소모해 전방으로 붉은 검기를 발사합니다.</p>
   </div>
 </div>
@@ -95,7 +95,7 @@
 <div style="display:flex; align-items:center; gap:20px; margin:24px 0; padding-bottom:20px; border-bottom:1px solid var(--vp-c-divider);">
   <img src="/images_berserker/피의계약.png" alt="피의 계약" style="width:100px; height:100px; object-fit:contain; flex-shrink:0;" />
   <div style="flex:1; min-width:0;">
-    <h3>1. 피의 계약</h3>
+    <h3>피의 계약</h3>
     <p>습득하면 광란 게이지의 자연 감소에 면역이 됩니다.</p>
     <p>사용 시 넓은 범위에 피해를 주고 체력이 15%로 감소합니다.</p>
   </div>
@@ -104,7 +104,7 @@
 <div style="display:flex; align-items:center; gap:20px; margin:24px 0; padding-bottom:20px; border-bottom:1px solid var(--vp-c-divider);">
   <img src="/images_berserker/적월선회.png" alt="적월 선회" style="width:100px; height:100px; object-fit:contain; flex-shrink:0;" />
   <div style="flex:1; min-width:0;">
-    <h3>2. 적월 선회</h3>
+    <h3>적월 선회</h3>
     <p>1초 동안 캐릭터를 따라 회전하며 주변 적을 공격합니다.</p>
     <p>총 2회전하며 같은 적을 최대 두 번 공격할 수 있습니다.</p>
   </div>
@@ -113,7 +113,7 @@
 <div style="display:flex; align-items:center; gap:20px; margin:24px 0; padding-bottom:20px; border-bottom:1px solid var(--vp-c-divider);">
   <img src="/images_berserker/압도적인패기.png" alt="압도적인 패기" style="width:100px; height:100px; object-fit:contain; flex-shrink:0;" />
   <div style="flex:1; min-width:0;">
-    <h3>3. 압도적인 패기</h3>
+    <h3>압도적인 패기</h3>
     <p>주변 8타일 내 좀비를 넘어뜨립니다.</p>
     <p>4타일 이내의 좀비에게는 추가 피해를 줍니다.</p>
   </div>
