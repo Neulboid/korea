@@ -344,3 +344,8 @@ div[class*='language-']:hover {
     scroll-behavior: auto !important;
   }
 }
+
+/* 18. 오른쪽 목차의 "On this page" 제목 글자만 숨기기 (목차 항목은 그대로) */
+.VPDocAsideOutline .outline-title {
+  display: none;
+}
