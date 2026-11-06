@@ -1,5 +1,12 @@
 
 # 뮤턴트
+<div style="width:100%; aspect-ratio:16 / 9; overflow:hidden; border-radius:12px; margin:20px 0 28px;">
+  <img
+    src="/images_mutant/뮤턴트.png"
+    alt="뮤턴트 대표 이미지"
+    style="width:100%; height:100%; object-fit:cover; object-position:center;"
+  />
+</div>
 
 근접 전투에 특화된 캐릭터입니다.
 

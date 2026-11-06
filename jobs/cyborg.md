@@ -1,5 +1,12 @@
 
 # 사이보그
+<div style="width:100%; aspect-ratio:16 / 9; overflow:hidden; border-radius:12px; margin:20px 0 28px;">
+  <img
+    src="/images_cyborg/사이보.png"
+    alt="사이보그 대표 이미지"
+    style="width:100%; height:100%; object-fit:cover; object-position:center;"
+  />
+</div>
 
 하이브리드형 전투 캐릭터입니다.
 
@@ -106,7 +113,6 @@
   </div>
 </div>
 
----
 
 ## 각성 궁극기
 
