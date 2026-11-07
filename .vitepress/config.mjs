@@ -47,7 +47,8 @@ export default defineConfig({
         text: '서버안내',
         items: [
           { text: '위키 홈', link: '/' },
-          { text: '서버 규칙', link: '/rules' }
+          { text: '서버 규칙', link: '/rules' },
+          { text: '아티팩트', link: '/artifacts' }
         ]
       },
       {
