@@ -10,7 +10,8 @@
 ---
 
 
-## 특수 개체
+## 특수 개체 {#special-entities}
+
 
 <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; margin:16px 0;">
 
@@ -49,7 +50,7 @@
 
 ---
 
-## 아티팩트 종류
+## 아티팩트 종류 {#artifact-types}
 
 아티팩트는 장신구 종류에 따라 다양한 효과를 제공합니다.
 

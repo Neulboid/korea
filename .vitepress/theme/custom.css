@@ -853,3 +853,1029 @@ img[src*="banner.png"] {
     height: 145px !important;
   }
 }
+
+/* =====================================================
+   NEULVOID HOMEPAGE DESIGN
+   PREMIUM DARK RPG STYLE
+   ===================================================== */
+
+
+/* 1. HOMEPAGE HERO */
+
+.home-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 175px;
+  padding: clamp(36px, 5vw, 54px) 24px;
+  margin: 0 0 38px;
+
+  box-sizing: border-box;
+  text-align: center;
+
+  border: 1px solid rgba(190, 75, 95, 0.25);
+  border-radius: 18px;
+
+  background:
+    radial-gradient(
+      ellipse 65% 110% at 100% 0%,
+      rgba(150, 48, 65, 0.22),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 45% 90% at 0% 100%,
+      rgba(90, 58, 105, 0.11),
+      transparent 70%
+    ),
+    linear-gradient(
+      135deg,
+      #101015,
+      #19141b 55%,
+      #111015
+    );
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.035),
+    0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  background:
+    linear-gradient(
+      115deg,
+      transparent 10%,
+      rgba(255, 255, 255, 0.025) 50%,
+      transparent 85%
+    );
+
+  pointer-events: none;
+}
+
+.home-hero__title {
+  position: relative;
+
+  color: #ffffff;
+
+  font-size: clamp(30px, 5vw, 44px);
+  font-weight: 850;
+  letter-spacing: -0.055em;
+  line-height: 1.3;
+
+  text-shadow:
+    0 2px 20px rgba(255, 255, 255, 0.07);
+}
+
+.home-hero__accent {
+  width: 44px;
+  height: 2px;
+
+  margin-top: 19px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #c45d72,
+    transparent
+  );
+
+  border-radius: 999px;
+  box-shadow: 0 0 14px rgba(196, 93, 114, 0.3);
+}
+
+
+/* 2. SERVER SCHEDULE */
+
+.home-schedule {
+  overflow: hidden;
+
+  margin: 20px 0 22px;
+
+  border: 1px solid var(--wiki-border);
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(27, 22, 29, 0.95),
+      rgba(13, 12, 17, 0.98)
+    );
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+.home-schedule__row {
+  display: grid;
+  grid-template-columns: 75px minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+
+  padding: 17px 20px;
+}
+
+.home-schedule__row + .home-schedule__row {
+  border-top: 1px solid rgba(255, 255, 255, 0.065);
+}
+
+.home-schedule__label {
+  color: #cf8997;
+
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.035em;
+}
+
+.home-schedule__value {
+  color: #f0e9eb;
+
+  font-size: 16px;
+  font-weight: 750;
+  line-height: 1.6;
+}
+
+.home-schedule__note {
+  margin: 0 !important;
+  padding: 13px 20px 15px;
+
+  color: var(--vp-c-text-3);
+  font-size: 13px;
+  line-height: 1.7;
+
+  background: rgba(255, 255, 255, 0.018);
+  border-top: 1px solid rgba(255, 255, 255, 0.065);
+}
+
+
+/* 3. SERVER INTRODUCTION */
+
+.home-overview {
+  max-width: 900px;
+}
+
+.home-overview p {
+  margin: 13px 0 !important;
+  line-height: 1.9;
+}
+
+.home-overview p:last-child {
+  margin-bottom: 0 !important;
+}
+
+
+/* 4. STAFF CREDITS */
+
+.home-credits {
+  display: flex;
+  flex-direction: column;
+
+  margin: 18px 0 15px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--wiki-border);
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(24, 20, 27, 0.92),
+      rgba(13, 12, 16, 0.98)
+    );
+}
+
+.home-credit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  padding: 15px 18px;
+
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+
+  transition: background 0.2s ease;
+}
+
+.home-credit + .home-credit {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.home-credit:hover {
+  background: rgba(190, 76, 96, 0.055);
+}
+
+.home-credit strong {
+  color: #e9d9de;
+  font-weight: 700;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.home-thanks {
+  margin-top: 22px !important;
+
+  color: var(--vp-c-text-3);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+/* 5. HOMEPAGE MOBILE */
+
+@media (max-width: 767px) {
+
+  .home-hero {
+    min-height: 145px;
+    padding: 34px 18px;
+    margin-bottom: 30px;
+
+    border-radius: 14px;
+  }
+
+  .home-hero__title {
+    font-size: clamp(26px, 7vw, 34px);
+  }
+
+  .home-hero__accent {
+    margin-top: 15px;
+  }
+
+  .home-schedule__row {
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 10px;
+
+    padding: 14px;
+  }
+
+  .home-schedule__value {
+    font-size: 14px;
+  }
+
+  .home-schedule__note {
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+
+  .home-credit {
+    padding: 14px;
+    font-size: 13px;
+  }
+}
+
+/* =====================================================
+   NEULVOID - PREMIUM SKILL CARDS
+   ===================================================== */
+
+/* SKILL CARD */
+
+.vp-doc div[style*="align-items:center"][style*="padding-bottom:20px"] {
+  box-sizing: border-box;
+
+  padding: 16px !important;
+  margin: 18px 0 !important;
+
+  border: 1px solid rgba(150, 93, 110, 0.22) !important;
+  border-radius: 14px !important;
+
+  background:
+    linear-gradient(
+      125deg,
+      rgba(30, 23, 30, 0.96),
+      rgba(15, 14, 19, 0.98) 65%,
+      rgba(20, 15, 21, 0.96)
+    );
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.025);
+
+  transition:
+    border-color 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease,
+    transform 0.22s ease;
+}
+
+/* CARD HOVER */
+
+.vp-doc div[style*="align-items:center"][style*="padding-bottom:20px"]:hover {
+  border-color: rgba(196, 93, 114, 0.55) !important;
+
+  background:
+    linear-gradient(
+      125deg,
+      rgba(39, 25, 33, 0.98),
+      rgba(17, 14, 20, 0.99)
+    );
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+
+  transform: translateY(-2px);
+}
+
+/* SKILL ICON */
+
+.vp-doc div[style*="align-items:center"][style*="padding-bottom:20px"] > img {
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.35));
+  transition: transform 0.22s ease;
+}
+
+/* ICON HOVER */
+
+.vp-doc div[style*="align-items:center"][style*="padding-bottom:20px"]:hover > img {
+  transform: scale(1.045);
+}
+
+/* SKILL TITLE */
+
+.vp-doc div[style*="align-items:center"][style*="padding-bottom:20px"] h3 {
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+
+  border: none !important;
+
+  color: #f0e5e9 !important;
+  font-size: 17px !important;
+  font-weight: 750 !important;
+  line-height: 1.45 !important;
+}
+
+/* SKILL DESCRIPTION */
+
+.vp-doc div[style*="align-items:center"][style*="padding-bottom:20px"] p {
+  margin: 5px 0 !important;
+
+  color: #b9b1ba;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+  .vp-doc div[style*="align-items:center"][style*="padding-bottom:20px"] {
+    gap: 13px !important;
+    padding: 12px !important;
+    margin: 14px 0 !important;
+
+    border-radius: 12px !important;
+  }
+
+  .vp-doc div[style*="align-items:center"][style*="padding-bottom:20px"] > img {
+    width: 76px !important;
+    height: 76px !important;
+  }
+
+  .vp-doc div[style*="align-items:center"][style*="padding-bottom:20px"] h3 {
+    font-size: 15.5px !important;
+  }
+
+  .vp-doc div[style*="align-items:center"][style*="padding-bottom:20px"] p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+}
+
+/* =====================================================
+   NEULVOID - PAGE ACCENT COLOR SYSTEM
+   JOB / ARTIFACT / ENHANCEMENT / ELIXIR
+   ===================================================== */
+
+
+/* 1. ARTIFACT - PURPLE */
+
+.VPDoc:has(.vp-doc h2#artifact-types) {
+  --wiki-page-accent: #b49ad8;
+  --wiki-page-soft: rgba(180, 154, 216, 0.12);
+  --wiki-page-border: rgba(180, 154, 216, 0.23);
+
+  --vp-c-divider: rgba(180, 154, 216, 0.19);
+  --wiki-border: rgba(180, 154, 216, 0.23);
+}
+
+/* 아티팩트 제목 강조 */
+
+.VPDoc:has(.vp-doc h2#artifact-types) .vp-doc h2 {
+  border-bottom-color: var(--wiki-page-border) !important;
+}
+
+.VPDoc:has(.vp-doc h2#artifact-types) .vp-doc h2::after {
+  background: var(--wiki-page-accent) !important;
+  box-shadow: 0 0 12px var(--wiki-page-soft);
+}
+
+/* 아티팩트 세부 제목 */
+
+.VPDoc:has(.vp-doc h2#artifact-types) .vp-doc h3 {
+  border-left-color: rgba(180, 154, 216, 0.7) !important;
+  color: #dfd2f0 !important;
+}
+
+
+/* 2. ENHANCEMENT - BLUE */
+
+.VPDoc:has(.vp-doc h2#accessory-stones) {
+  --wiki-page-accent: #80b8e8;
+  --wiki-page-soft: rgba(128, 184, 232, 0.12);
+  --wiki-page-border: rgba(128, 184, 232, 0.22);
+
+  --vp-c-divider: rgba(128, 184, 232, 0.19);
+  --wiki-border: rgba(128, 184, 232, 0.22);
+}
+
+/* 강화석 제목 */
+
+.VPDoc:has(.vp-doc h2#accessory-stones) .vp-doc h2:not(#elixirs) {
+  border-bottom-color: var(--wiki-page-border) !important;
+}
+
+.VPDoc:has(.vp-doc h2#accessory-stones) .vp-doc h2:not(#elixirs)::after {
+  background: #80b8e8 !important;
+  box-shadow: 0 0 12px rgba(128, 184, 232, 0.16);
+}
+
+/* 강화석 세부 제목 */
+
+.VPDoc:has(.vp-doc h2#accessory-stones) .vp-doc h3 {
+  border-left-color: rgba(128, 184, 232, 0.7) !important;
+  color: #c5ddf2 !important;
+}
+
+
+/* 3. ELIXIR - GOLD */
+
+.VPDoc:has(.vp-doc h2#accessory-stones) .vp-doc h2#elixirs {
+  border-bottom-color: rgba(216, 182, 107, 0.28) !important;
+  color: #ead6a3 !important;
+}
+
+.VPDoc:has(.vp-doc h2#accessory-stones) .vp-doc h2#elixirs::after {
+  background: #d8b66b !important;
+  box-shadow: 0 0 12px rgba(216, 182, 107, 0.2);
+}
+
+/* 영약 세부 제목 */
+
+.VPDoc:has(.vp-doc h2#accessory-stones) .vp-doc h2#elixirs ~ h3 {
+  border-left-color: rgba(216, 182, 107, 0.75) !important;
+  color: #ead6a3 !important;
+}
+
+
+/* 4. PAGE ACCENT LINKS */
+
+/* 아티팩트 링크 */
+
+.VPDoc:has(.vp-doc h2#artifact-types) .vp-doc a:not(.header-anchor) {
+  color: #cbb6e8;
+  text-decoration-color: rgba(180, 154, 216, 0.4);
+}
+
+.VPDoc:has(.vp-doc h2#artifact-types) .vp-doc a:not(.header-anchor):hover {
+  color: #e5d5fa;
+}
+
+/* 강화석 및 영약 링크 */
+
+.VPDoc:has(.vp-doc h2#accessory-stones) .vp-doc a:not(.header-anchor) {
+  color: #a8cdec;
+  text-decoration-color: rgba(128, 184, 232, 0.4);
+}
+
+.VPDoc:has(.vp-doc h2#accessory-stones) .vp-doc a:not(.header-anchor):hover {
+  color: #d6eaff;
+}
+
+/* =====================================================
+   NEULVOID - PREMIUM DATABASE TABLES
+   ===================================================== */
+
+/* TABLE BASE */
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+
+  margin: 26px 0 32px;
+
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+
+  border: 1px solid var(--wiki-page-border, var(--wiki-border)) !important;
+  border-radius: 14px !important;
+  overflow: hidden;
+
+  background: rgba(12, 11, 15, 0.78);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* TABLE HEADER */
+
+.vp-doc thead {
+  background:
+    linear-gradient(
+      120deg,
+      var(--wiki-page-soft, rgba(196, 93, 114, 0.13)),
+      rgba(25, 20, 28, 0.96)
+    );
+}
+
+.vp-doc thead th {
+  padding: 15px 17px !important;
+
+  background: transparent !important;
+
+  color: #f0e9eb !important;
+  font-size: 13.5px;
+  font-weight: 750 !important;
+
+  text-align: left;
+
+  border-bottom: 1px solid var(--wiki-page-border, var(--wiki-border)) !important;
+}
+
+
+/* TABLE BODY */
+
+.vp-doc tbody td {
+  padding: 14px 17px !important;
+
+  color: var(--vp-c-text-2);
+
+  line-height: 1.75;
+  vertical-align: middle;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055) !important;
+
+  transition: background-color 0.2s ease;
+}
+
+
+/* ZEBRA ROWS */
+
+.vp-doc tbody tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.018);
+}
+
+
+/* ITEM NAME - FIRST COLUMN */
+
+.vp-doc tbody td:first-child {
+  color: var(--wiki-page-accent, #e0c5ca) !important;
+  font-weight: 700;
+}
+
+
+/* ROW HOVER */
+
+.vp-doc tbody tr:hover td {
+  background: var(--wiki-page-soft, rgba(196, 93, 114, 0.08));
+}
+
+
+/* LAST ROW */
+
+.vp-doc tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+
+/* TABLE FOOTER / BORDERS */
+
+.vp-doc table tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.vp-doc table tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+
+/* MOBILE TABLE */
+
+@media (max-width: 767px) {
+
+  .vp-doc table {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    white-space: normal;
+    border-radius: 11px !important;
+
+    margin: 20px 0 26px;
+  }
+
+  .vp-doc thead th {
+    padding: 12px 13px !important;
+    font-size: 12.5px;
+  }
+
+  .vp-doc tbody td {
+    padding: 12px 13px !important;
+    font-size: 13px;
+
+    white-space: normal;
+    word-break: keep-all;
+  }
+}
+
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .vp-doc tbody td {
+    transition: none;
+  }
+}
+
+/* =====================================================
+   NEULVOID - PREMIUM DATABASE TABLES
+   ===================================================== */
+
+/* TABLE BASE */
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+
+  margin: 26px 0 32px;
+
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+
+  border: 1px solid var(--wiki-page-border, var(--wiki-border)) !important;
+  border-radius: 14px !important;
+  overflow: hidden;
+
+  background: rgba(12, 11, 15, 0.78);
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* TABLE HEADER */
+
+.vp-doc thead {
+  background:
+    linear-gradient(
+      120deg,
+      var(--wiki-page-soft, rgba(196, 93, 114, 0.13)),
+      rgba(25, 20, 28, 0.96)
+    );
+}
+
+.vp-doc thead th {
+  padding: 15px 17px !important;
+
+  background: transparent !important;
+
+  color: #f0e9eb !important;
+  font-size: 13.5px;
+  font-weight: 750 !important;
+
+  text-align: left;
+
+  border-bottom: 1px solid var(--wiki-page-border, var(--wiki-border)) !important;
+}
+
+
+/* TABLE BODY */
+
+.vp-doc tbody td {
+  padding: 14px 17px !important;
+
+  color: var(--vp-c-text-2);
+
+  line-height: 1.75;
+  vertical-align: middle;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055) !important;
+
+  transition: background-color 0.2s ease;
+}
+
+
+/* ZEBRA ROWS */
+
+.vp-doc tbody tr:nth-child(even) td {
+  background: rgba(255, 255, 255, 0.018);
+}
+
+
+/* ITEM NAME - FIRST COLUMN */
+
+.vp-doc tbody td:first-child {
+  color: var(--wiki-page-accent, #e0c5ca) !important;
+  font-weight: 700;
+}
+
+
+/* ROW HOVER */
+
+.vp-doc tbody tr:hover td {
+  background: var(--wiki-page-soft, rgba(196, 93, 114, 0.08));
+}
+
+
+/* LAST ROW */
+
+.vp-doc tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+
+/* TABLE FOOTER / BORDERS */
+
+.vp-doc table tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.vp-doc table tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+
+/* MOBILE TABLE */
+
+@media (max-width: 767px) {
+
+  .vp-doc table {
+    display: block;
+
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    white-space: normal;
+    border-radius: 11px !important;
+
+    margin: 20px 0 26px;
+  }
+
+  .vp-doc thead th {
+    padding: 12px 13px !important;
+    font-size: 12.5px;
+  }
+
+  .vp-doc tbody td {
+    padding: 12px 13px !important;
+    font-size: 13px;
+
+    white-space: normal;
+    word-break: keep-all;
+  }
+}
+
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .vp-doc tbody td {
+    transition: none;
+  }
+}
+
+/* =====================================================
+   NEULVOID - PREMIUM MICRO INTERACTIONS
+   SUBTLE ANIMATIONS & USER EXPERIENCE
+   ===================================================== */
+
+
+/* 1. NAVIGATION UNDERLINE */
+
+.VPNavBarMenuLink {
+  position: relative;
+  transition: color 0.22s ease;
+}
+
+.VPNavBarMenuLink::after {
+  content: "";
+
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 4px;
+
+  height: 1.5px;
+
+  background: #c45d72;
+  border-radius: 10px;
+
+  transform: scaleX(0);
+  transform-origin: center;
+
+  transition: transform 0.25s ease;
+}
+
+.VPNavBarMenuLink:hover::after,
+.VPNavBarMenuLink:focus-visible::after {
+  transform: scaleX(1);
+}
+
+
+/* 2. SIDEBAR INTERACTION */
+
+.VPSidebar .VPSidebarItem > .item {
+  transition:
+    background-color 0.22s ease,
+    color 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.VPSidebar .VPSidebarItem.is-active > .item {
+  box-shadow:
+    inset 3px 0 0 rgba(196, 93, 114, 0.75);
+}
+
+.VPSidebar .VPSidebarItem:not(.is-active) > .item:hover {
+  color: #f0dce1;
+}
+
+
+/* 3. BUTTON INTERACTION */
+
+.VPButton {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease !important;
+}
+
+.VPButton:active {
+  transform: scale(0.97) !important;
+  box-shadow: none !important;
+  filter: brightness(0.92);
+}
+
+
+/* 4. BANNER INTERACTION */
+
+.wiki-banner {
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .wiki-banner:hover {
+    border-color: rgba(196, 93, 114, 0.42);
+
+    box-shadow:
+      0 12px 35px rgba(0, 0, 0, 0.2),
+      0 0 20px rgba(196, 93, 114, 0.045);
+  }
+}
+
+
+/* 5. HOME HERO INTERACTION */
+
+.home-hero {
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .home-hero:hover {
+    border-color: rgba(196, 93, 114, 0.42);
+
+    box-shadow:
+      0 15px 40px rgba(0, 0, 0, 0.24),
+      0 0 24px rgba(196, 93, 114, 0.055);
+  }
+}
+
+
+/* 6. LINK INTERACTION */
+
+.vp-doc a:not(.header-anchor) {
+  transition:
+    color 0.2s ease,
+    text-decoration-color 0.2s ease;
+}
+
+
+/* 7. PAGE FOOTER INTERACTION */
+
+.VPDocFooter .pager-link {
+  transition:
+    border-color 0.22s ease,
+    background-color 0.22s ease,
+    transform 0.22s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .VPDocFooter .pager-link:hover {
+    transform: translateY(-2px);
+  }
+}
+
+
+/* 8. KEYBOARD ACCESSIBILITY */
+
+:where(
+  a,
+  button,
+  [role="button"],
+  input,
+  textarea,
+  select
+):focus-visible {
+  outline: 2px solid rgba(196, 93, 114, 0.8);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+
+/* 9. CUSTOM SCROLLBAR */
+
+:root {
+  scrollbar-color: #392831 #08070a;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08070a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #392831;
+  border: 2px solid #08070a;
+  border-radius: 999px;
+
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #89505e;
+}
+
+
+/* 10. MOBILE OPTIMIZATION */
+
+@media (max-width: 767px) {
+  .VPNavBarMenuLink::after {
+    display: none;
+  }
+
+  .wiki-banner,
+  .home-hero {
+    transition: none;
+  }
+}
+
+
+/* 11. REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .VPNavBarMenuLink,
+  .VPNavBarMenuLink::after,
+  .VPButton,
+  .wiki-banner,
+  .home-hero,
+  .VPDocFooter .pager-link,
+  .VPSidebar .VPSidebarItem > .item {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
