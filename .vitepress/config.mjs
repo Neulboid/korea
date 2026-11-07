@@ -9,7 +9,10 @@ export default defineConfig({
   appearance: 'force-dark',
 
   themeConfig: {
-    outline: false,
+    outline: {
+     level: [2, 3],
+     label: '페이지 목차'
+    },
     aside: false,
     search: {
       provider: 'local',
