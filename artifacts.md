@@ -21,9 +21,7 @@
   style="width:220px; max-height:300px; object-fit:contain; border-radius:8px;"
 />
 
-| 구분 | 내용 |
-|---|---|
-| 체력 | 3,000 |
+**체력:** 3,000
 
 **능력**
 
@@ -48,9 +46,7 @@
   style="width:320px; max-height:220px; object-fit:contain; border-radius:8px;"
 />
 
-| 구분 | 내용 |
-|---|---|
-| 체력 | 일반 좀비와 동일 |
+**체력:** 일반 좀비와 동일
 
 **능력**
 
