@@ -28,7 +28,7 @@
       <p style="margin:2px 0;">📦 장신구 상자 ×1</p>
       <p style="margin:2px 0;">💎 장신구 강화석 상자 ×2</p>
       <p style="margin:2px 0;">⚔️ 무기 강화석 상자 ×1</p>
-      <p style="margin:2px 0;">🪙 하늘 동화 ×1</p>
+      <p style="margin:2px 0;">🥉 하늘 동화 ×1</p>
     </div>
   </div>
 
