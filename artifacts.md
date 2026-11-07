@@ -9,53 +9,41 @@
 
 ---
 
+
 ## 특수 개체
 
-아티팩트를 획득할 수 있는 특수 개체입니다.
+<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; margin:16px 0;">
 
-### 🧬 생존 돌연변이
+  <div style="display:flex; align-items:flex-start; gap:12px; padding:12px; border:1px solid var(--vp-c-divider); border-radius:10px;">
+    <img src="/images_artifacts/생존돌연변이.png" alt="생존 돌연변이" style="width:76px; height:110px; object-fit:contain; flex-shrink:0;" />
+    <div style="min-width:0; font-size:0.88rem;">
+      <h3 style="margin:0 0 6px;">🧬 생존 돌연변이</h3>
+      <p style="margin:4px 0;"><strong>체력:</strong> 3,000</p>
+      <p style="margin:4px 0;"><strong>능력</strong></p>
+      <p style="margin:2px 0;">항상 달림 · 이동 속도 1.2배</p>
+      <p style="margin:2px 0;">밀치기로 넘어지지 않음</p>
+      <p style="margin:6px 0 2px;"><strong>전리품</strong></p>
+      <p style="margin:2px 0;">📦 장신구 상자 ×1</p>
+      <p style="margin:2px 0;">💎 장신구 강화석 상자 ×2</p>
+      <p style="margin:2px 0;">⚔️ 무기 강화석 상자 ×1</p>
+      <p style="margin:2px 0;">🪙 하늘 동화 ×1</p>
+    </div>
+  </div>
 
-<img
-  src="/images_artifacts/생존돌연변이.png"
-  alt="생존 돌연변이"
-  style="width:220px; max-height:300px; object-fit:contain; border-radius:8px;"
-/>
+  <div style="display:flex; align-items:flex-start; gap:12px; padding:12px; border:1px solid var(--vp-c-divider); border-radius:10px;">
+    <img src="/images_artifacts/기어다니는공포.png" alt="기어다니는 공포" style="width:76px; height:110px; object-fit:contain; flex-shrink:0;" />
+    <div style="min-width:0; font-size:0.88rem;">
+      <h3 style="margin:0 0 6px;">🪱 기어다니는 공포</h3>
+      <p style="margin:4px 0;"><strong>체력:</strong> 일반 좀비와 동일</p>
+      <p style="margin:4px 0;"><strong>능력</strong></p>
+      <p style="margin:2px 0;">빠른 속도로 회전</p>
+      <p style="margin:2px 0;">빠른 속도로 기어 다님</p>
+      <p style="margin:6px 0 2px;"><strong>전리품</strong></p>
+      <p style="margin:2px 0;">💰 현금 ×50</p>
+    </div>
+  </div>
 
-**체력:** 3,000
-
-**능력**
-
-- 항상 달리며 이동합니다.
-- 달리기 속도가 일반 좀비보다 1.2배 빠릅니다.
-- 밀치기로 넘어지지 않습니다.
-
-**전리품**
-
-- 📦 아티팩트 장신구 상자 × 1
-- 💎 장신구 강화석 상자 × 2
-- ⚔️ 무기 강화석 상자 × 1
-- 🪙 하늘 동화 × 1
-
----
-
-### 🪱 기어다니는 공포
-
-<img
-  src="/images_artifacts/기어다니는공포.png"
-  alt="기어다니는 공포"
-  style="width:320px; max-height:220px; object-fit:contain; border-radius:8px;"
-/>
-
-**체력:** 일반 좀비와 동일
-
-**능력**
-
-- 빠른 속도로 회전합니다.
-- 빠른 속도로 기어 다닙니다.
-
-**전리품**
-
-- 💰 현금 × 50개
+</div>
 
 ---
 
