@@ -14,8 +14,9 @@
 
 <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; margin:16px 0;">
 
-  <div style="display:flex; align-items:flex-start; gap:12px; padding:12px; border:1px solid var(--vp-c-divider); border-radius:10px;">
-    <img src="/images_artifacts/생존돌연변이.png" alt="생존 돌연변이" style="width:76px; height:110px; object-fit:contain; flex-shrink:0;" />
+  <div class="artifact-card" style="display:flex; align-items:flex-start; gap:12px; padding:12px; border:1px solid var(--vp-c-divider); border-radius:10px;">
+   <img src="/images_artifacts/생존돌연변이.png" alt="생존 돌연변이"
+   style="width:125px; height:165px; object-fit:contain; flex-shrink:0;" />
     <div style="min-width:0; font-size:0.88rem;">
       <h3 style="margin:0 0 6px;">🧬 생존 돌연변이</h3>
       <p style="margin:4px 0;"><strong>체력:</strong> 3,000</p>
@@ -31,7 +32,8 @@
   </div>
 
   <div style="display:flex; align-items:flex-start; gap:12px; padding:12px; border:1px solid var(--vp-c-divider); border-radius:10px;">
-    <img src="/images_artifacts/기어다니는공포.png" alt="기어다니는 공포" style="width:76px; height:110px; object-fit:contain; flex-shrink:0;" />
+    <img src="/images_artifacts/기어다니는공포.png" alt="기어다니는 공포"
+    style="width:125px; height:165px; object-fit:contain; flex-shrink:0;" />
     <div style="min-width:0; font-size:0.88rem;">
       <h3 style="margin:0 0 6px;">🪱 기어다니는 공포</h3>
       <p style="margin:4px 0;"><strong>체력:</strong> 일반 좀비와 동일</p>

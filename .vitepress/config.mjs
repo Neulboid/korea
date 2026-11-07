@@ -9,6 +9,8 @@ export default defineConfig({
   appearance: 'force-dark',
 
   themeConfig: {
+    outline: false,
+    aside: false,
     search: {
       provider: 'local',
       options: {

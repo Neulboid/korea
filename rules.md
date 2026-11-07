@@ -1,10 +1,5 @@
 
-<div style="padding: 36px 24px; margin-bottom: 30px; text-align: center; border: 1px solid rgba(190, 75, 80, 0.25); border-radius: 14px; background: radial-gradient(ellipse at 80% 20%, rgba(150, 48, 55, 0.22), transparent 55%), linear-gradient(120deg, #191a20 0%, #292027 100%);">
-  <div style="font-size: clamp(28px, 5vw, 36px); font-weight: 800; letter-spacing: -1px; color: #ffffff;">
-    서버 규칙
-  </div>
-  <div style="width: 42px; height: 2px; margin: 15px auto 0; background: #c45d64; border-radius: 2px;"></div>
-</div>
+# 서버 규칙
 
 서버를 이용하기 전에 아래 규칙을 반드시 확인해 주세요.
 
